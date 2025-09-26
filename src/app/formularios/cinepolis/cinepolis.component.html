@@ -1,0 +1,71 @@
+<div style="text-align: center; padding-top: 20px;">
+  <h1>CINEPOLIS</h1>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 20px; padding: 20px;">
+
+  <table style="border: 2px solid white; padding: 10px; border-collapse: collapse; width: 350px;">
+    <tr>
+      <th colspan="2" style="text-align: left; padding-bottom: 10px;">
+        <h2>Entradas</h2>
+      </th>
+    </tr>
+    <tr>
+      <td style="padding: 5px;">Nombre</td>
+      <td style="padding: 5px;"><input [(ngModel)]="nombre" type="text" style="width: 100%;"></td>
+    </tr>
+    <tr>
+      <td style="padding: 5px;">Cantidad Compradores</td>
+      <td style="padding: 5px;"><input [(ngModel)]="cantidadCom" type="text" style="width: 100%;"></td>
+    </tr>
+    <tr>
+      <td style="padding: 5px;">Tarjeta Cineco</td>
+      <td style="padding: 5px;">
+        <input [(ngModel)]="tarCine" type="radio" id="si" name="cineco" value="si">
+        <label for="si">Sí</label>
+        <input [(ngModel)]="tarCine" type="radio" id="no" name="cineco" value="no">
+        <label for="no">No</label>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 5px;">Cantidad De Boletas</td>
+      <td style="padding: 5px;"><input [(ngModel)]="cantBole" type="text" style="width: 100%;"></td>
+    </tr>
+    <div *ngIf="mensajeError" style="color: red; margin-top: 10px; font-weight: bold; text-align: center;">
+              {{ mensajeError }}
+            </div>
+  </table>
+
+  <table style="border: 2px solid white; padding: 10px; border-collapse: collapse; width: 350px;">
+    <tr>
+      <th colspan="2" style="text-align: left; padding-bottom: 10px;">
+        <h2>Salidas</h2>
+      </th>
+    </tr>
+    <tr>
+      <td style="padding: 5px;">Valor a Pagar</td>
+      <td style="padding: 5px;"><input [(ngModel)]="valorPagar" type="text" style="width: 100%;"></td>
+    </tr>
+  </table>
+</div>
+
+<div style="text-align: center; padding-top: 20px;">
+  <h1 style="font-size: 50px; font-weight: bold; margin: 0;">Cinépolis</h1>
+  <p style="font-size: 20px; margin: 0;">LA CAPITAL DEL CINE</p>
+</div>
+
+<div style="display: flex; justify-content: center; padding-top: 20px;">
+  <table style="border: 2px solid white; padding: 10px; border-collapse: collapse;">
+    <tr>
+      <th style="text-align: left;">
+        <h2>Acciones</h2>
+      </th>
+    </tr>
+    <tr>
+      <td style="padding: 5px;">
+        <button style="padding: 5px 20px;" (click)="procesar()">Procesar</button>
+        <button style="padding: 5px 20px;" (click)="salir()">Salir</button>
+      </td>
+    </tr>
+  </table>
+</div>
