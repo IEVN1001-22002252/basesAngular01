@@ -99,3 +99,74 @@ th {
     height: 30px;
     width: 15%;
 }
+
+/* === CLASES DE COLOR CORREGIDAS PARA PINTAR LAS CELDAS === */
+
+.table-dark { /* Negro (0) */
+    background-color: black !important;
+    color: white;
+}
+
+.table-cafe { /* Marrón (1) */
+    background-color: #6F4E37 !important;
+    color: #fff;
+}
+
+.table-rojo { /* Rojo (2) */
+    background-color: #dc3545 !important;
+    color: #f8f9fa;
+}
+
+.table-naranja { /* Naranja (3) */
+    background-color: #fd7e14 !important;
+    color: #212529;
+}
+
+.table-amarillo { /* Amarillo (4) */
+    background-color: #ffc107 !important;
+    color: #212529; /* Color de texto oscuro para visibilidad */
+}
+
+.table-verde { /* Verde (5) */
+    background-color: #198754 !important;
+    color: #f8f9fa;
+}
+
+.table-azul { /* Azul (6) */
+    background-color: #0d6efd !important;
+    color: #f8f9fa;
+}
+
+.table-morado { /* Morado (7) */
+    background-color: #6f42c1 !important;
+    color: #f8f9fa;
+}
+
+.table-gris { /* Gris (8) */
+    background-color: #6c757d !important;
+    color: #f8f9fa;
+}
+
+.table-blanco { /* Blanco (9) */
+    background-color: #f8f9fa !important;
+    color: #212529; /* Color de texto oscuro para visibilidad */
+}
+
+.table-dorado { /* Tolerancia 5% */
+    background-color: #e3a319ff !important;
+}
+
+.table-plata { /* Tolerancia 10% */
+    background-color: #71767a !important;
+    color: #f8f9fa;
+}
+/* === FIN DE LAS CORRECCIONES === */
+
+.color-row td, .color-row th {
+    vertical-align: middle;
+    height: 35px;
+}
+
+.table-light {
+    color: #212529;
+}
